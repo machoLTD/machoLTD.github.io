@@ -23,19 +23,14 @@
     <main>
         <!-- Hover Boxes -->
         <section class="container" id="home">
-            <div class="hover-box" id="fivem-box" aria-label="FiveM Development">
-                <img src="images/fivem.png" alt="FiveM Logo" class="box-logo">
-                <div class="box-content">
-                    <h2>FiveM Development</h2>
-                    <p>Custom scripts, servers, and optimization.</p>
+            <div class="hover-box" id="custom-box" aria-label="Custom Development">
+                <div class="image-container">
+                    <img src="images/your-image.jpg" alt="Background Image" class="background-image">
+                    <img src="images/logo.png" alt="Logo" class="overlay-logo">
                 </div>
-            </div>
-
-            <div class="hover-box" id="discord-box" aria-label="Discord Development">
-                <img src="images/discord.png" alt="Discord Logo" class="box-logo">
                 <div class="box-content">
-                    <h2>Discord Development</h2>
-                    <p>Bot creation, server setup, and more.</p>
+                    <h2>Custom Development</h2>
+                    <p>Unique services tailored to your needs.</p>
                 </div>
             </div>
         </section>
@@ -53,7 +48,8 @@
         <section class="info-box" id="info-box">
             <h3>Additional Information</h3>
             <p>
-                This section provides more however its a Work In Progress Please Await More 
+                This section provides more details about the services offered, tutorials, and helpful guides. 
+                Feel free to explore more!
             </p>
         </section>
     </main>
@@ -64,8 +60,8 @@
         <p>&copy; Macho Development. All Rights Reserved 2024</p>
     </footer>
 
-    <!-- Scripts -->
-    <script src="components/uk-time.js" defer></script>
-    <script src="/components/script.js" defer></script>
+    <!-- External Scripts -->
+    <script src="/scripts/uk-time.js" defer></script> <!-- UK time script -->
+    <script type="module" src="/scripts/script.js" defer></script> <!-- Main script -->
 </body>
 </html>

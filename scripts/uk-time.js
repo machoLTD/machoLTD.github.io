@@ -1,8 +1,6 @@
-function updateUKTime() {
-    // Get the element where UK time will be displayed
+// Updates and displays the UK time on the webpage
+export function updateUKTime() {
     const ukTimeElement = document.getElementById('uk-time');
-
-    // Fetch the current UK time using the Europe/London timezone
     const now = new Date();
     const options = {
         timeZone: 'Europe/London',
@@ -13,7 +11,7 @@ function updateUKTime() {
     };
     const ukTime = new Intl.DateTimeFormat('en-GB', options).format(now);
 
-    // Update the text content of the UK time element with a smooth transition
+    // Fade-out and fade-in effect
     ukTimeElement.style.transition = 'opacity 0.3s';
     ukTimeElement.style.opacity = 0; // Fade out
     setTimeout(() => {
@@ -21,7 +19,3 @@ function updateUKTime() {
         ukTimeElement.style.opacity = 1; // Fade back in
     }, 300);
 }
-
-// Update the UK time immediately and every second thereafter
-updateUKTime();
-setInterval(updateUKTime, 1000);
