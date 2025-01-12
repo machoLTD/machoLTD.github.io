@@ -3,65 +3,82 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hover Box Example with Calendar</title>
-    <link rel="stylesheet" href="style.css">
+    <title>ScriptCraft</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
-    <!-- Navbar -->
+
     <nav class="navbar">
-        <div class="logo-container">
-            <a href="/index.html" class="home-logo" aria-label="Home">
-                <img src="images/main-logo.png" alt="Home Logo" class="main-logo">
-            </a>
+        <div class="nav-container">
+            <div class="nav-links">
+                <a href="index.html" class="active">Home</a>
+                <a href="rules.html">Rules</a>
+                <a href="staff.html">Staff Team</a>
+                <a href="policy.html">Policy Page</a>
+            </div>
+            <div class="nav-buttons">
+                <a href="https://discord.gg/6sVtwcZF" class="discord-btn">
+                    <i class="fab fa-discord"></i> Join Discord
+                </a>
+            </div>
         </div>
-        <ul class="nav-links">
-            <!-- Removed "FiveM Development" and "Discord Development" -->
-        </ul>
     </nav>
 
-    <!-- Main Content -->
-    <main>
-        <!-- Hover Boxes -->
-        <section class="container" id="home">
-            <div class="hover-box" id="custom-box" aria-label="Custom Development">
-                <div class="image-container">
-                    <img src="images/main-logo.png" alt="Background Image" class="background-image">
-                    <img src="images/main-logo.png" alt="Logo" class="overlay-logo">
-                </div>
-                <div class="box-content">
-                    <h2>Custom Development</h2>
-                    <p>Unique services tailored to your needs.</p>
+    
+    <section class="hero">
+        <div class="hero-content">
+            <div class="logo-container">
+                <img src="images/scriptcraft.png" alt="ScriptCraft Logo" class="server-logo">
+            </div>
+            <h1>ScriptCraft</h1>
+            <p>Discord Development</p>
+            <div class="server-status">
+                <span class="status-dot"></span>
+                <span class="status-text">Checking Discord status...</span>
+            </div>
+        </div>
+    </section>
+
+    <section class="main-content">
+        <div class="container">
+            <div class="info-box">
+                <h2><i class="fas fa-star"></i> Featured Development</h2>
+                <div class="division-list">
+                    <div class="division-item">
+                        <i class="fas fa-shield-alt"></i>
+                        <span>Discord Development</span>
+                    </div>
                 </div>
             </div>
-        </section>
 
-        <!-- Calendar Section -->
-        <section class="calendar-section">
-            <h3>Liam's Payment Calendar of DWP</h3>
-            <div class="calendar">
-                <div id="date-display"></div>
-                <button id="next-date" aria-label="Next Payment Date">Next Date (+4 Weeks)</button>
+            <div class="info-box">
+                <h2><i class="fas fa-info-circle"></i> Discord Information</h2>
+                <div class="discord-info">
+                    <div class="info-item">
+                        <i class="fas fa-users"></i>
+                        <span>Cheap & Reliable JavaScript</span>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-headset"></i>
+                        <span>24/7 Staff Support</span>
+                    </div>
+                </div>
             </div>
-        </section>
-
-        <!-- Info Box -->
-        <section class="info-box" id="info-box">
-            <h3>Additional Information</h3>
-            <p>
-                This section provides more details about the services offered, tutorials, and helpful guides. 
-                Feel free to explore more!
-            </p>
-        </section>
-    </main>
-
-    <!-- Footer -->
+        </div>
     <footer>
-        <p id="uk-time">UK Time: Loading...</p>
-        <p>&copy; Macho Development. All Rights Reserved 2024</p>
+        <div class="container">
+            <div class="footer-content">
+                <p>&copy; 2025 ScriptCraft. All rights reserved.</p>
+                <div class="footer-links">
+                    <a href="rules.html">Rules</a>
+                    <a href="staff.html">Staff Team</a>
+                    <a href="policy.html">Policy Page</a>
+                </div>
+            </div>
+        </div>
     </footer>
 
-    <!-- External Scripts -->
-    <script src="/scripts/uk-time.js" defer></script> <!-- UK time script -->
-    <script type="module" src="/scripts/script.js" defer></script> <!-- Main script -->
+    <script src="js/server-status.js"></script>
 </body>
-</html>
+</html> 
